@@ -1,0 +1,38 @@
+.pivo-card {
+  .card {
+    border: solid 1px #e7eaec;
+    background: white;
+  }
+
+  .card-block {
+    padding: 15px;
+    i {
+      padding-right: 5px;
+    }
+  }
+
+  .title {
+    background: white;
+    h4 {
+      margin: 0;
+      line-height: 3;
+      padding: 0 15px;
+      font-size: 14px;
+    }
+  }
+}
+
+.pivo-image {
+  height: 215px;
+  background: url('https://storage.googleapis.com/vai-agrosmart/uploads/field/image/image/216/thumb_Pivo2.png')
+  center
+}
+
+.status {
+  padding: 15px;
+  text-align: center;
+  background: #dff0d8;
+  border: solid 1px #d6e9c6;
+  color: #3c763d;
+  border-radius: 4px;
+}
