@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from 'components/header';
 import Summary from 'components/summary';
-import InfoCard from 'components/card';
+import InfoCard from 'components/info-card';
 
 export default class Dashboard extends React.Component {
   render() {

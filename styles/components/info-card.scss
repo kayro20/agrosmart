@@ -6,6 +6,7 @@
 
   .card-block {
     padding: 15px;
+    border-bottom: solid 1px #e7eaec;
     i {
       padding-right: 5px;
     }
@@ -35,4 +36,32 @@
   border: solid 1px #d6e9c6;
   color: #3c763d;
   border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.card-footer {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  i {
+    color: #1ab394;
+  }
+
+  button, a {
+    border: solid 1px #1ab394;
+    background: white;
+    padding: 6px 12px;
+    border-radius: 3px;
+    transition: all .5s;
+  }
+
+  button:hover, a:hover {
+    background: #1ab394;
+
+    i {
+      color: white;
+    }
+  }
 }

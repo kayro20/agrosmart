@@ -6,14 +6,21 @@
 @import 'components/summary.scss';
 @import 'components/info-card.scss';
 
+body {
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #676a6c;
+  padding: 61px 0 30px 0;
+}
+
 .client-name {
   text-align: center;
   border-bottom: solid 1px #ebebeb;
 
   h2 {
+    font-size: 24px;
+    font-weight: 100;
     margin: 0;
     line-height: 2;
-    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 }
 
