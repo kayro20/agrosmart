@@ -8,6 +8,8 @@ module.exports = {
   devtool: "source-map",
   devServer: {
     historyApiFallback: true,
+    host: '0.0.0.0',
+    disableHostCheck: true
   },
   entry: {
     script: './scripts/index.jsx',

@@ -1,0 +1,53 @@
+.weather-card {
+  color: white;
+  height: 100px;
+  background: #49c3da;
+  padding: 15px 30px;
+  height: inherit;
+}
+
+.card-block.day {
+  text-align: center;
+
+  i {
+    line-height: 1.5;
+  }
+}
+
+.temperature {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  line-height: 0.5;
+
+  div {
+    padding: 10px;
+  }
+}
+
+.minmax {
+  font-size: 1.5em;
+}
+
+.average {
+  font-size: 3em;
+}
+
+.rain {
+  padding-top: 50px;
+}
+
+.rain-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+
+  i {
+    padding-right: 10px;
+  }
+}

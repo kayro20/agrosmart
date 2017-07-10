@@ -12,8 +12,12 @@
   display: table-cell;
   padding: 0 10px;
 
-  div {
+  .icon-btn {
     padding: 10px;
+  }
+
+  .agromenu {
+    margin: 10px;
   }
 
   button {
@@ -49,4 +53,3 @@
     }
   }
 }
-

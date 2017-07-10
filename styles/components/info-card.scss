@@ -1,3 +1,7 @@
+.pivo {
+  margin-bottom: 25px;
+}
+
 .pivo-card {
   .card {
     border: solid 1px #e7eaec;
@@ -25,8 +29,6 @@
 
 .pivo-image {
   height: 215px;
-  background: url('https://storage.googleapis.com/vai-agrosmart/uploads/field/image/image/216/thumb_Pivo2.png')
-  center
 }
 
 .status {
@@ -63,5 +65,12 @@
     i {
       color: white;
     }
+  }
+}
+
+#modal {
+  .modal-title {
+    font-weight: 600;
+    font-size: 14px;
   }
 }

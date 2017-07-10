@@ -5,6 +5,8 @@
 @import 'components/header.scss';
 @import 'components/summary.scss';
 @import 'components/info-card.scss';
+@import 'components/weather-forecast.scss';
+@import 'components/sidebar.scss';
 
 body {
   font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -20,8 +22,13 @@ body {
     font-size: 24px;
     font-weight: 100;
     margin: 0;
-    line-height: 2;
+    line-height: 3.2;
   }
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .wraper-content {
@@ -32,3 +39,6 @@ body {
   }
 }
 
+button:focus {
+  outline: none;
+}

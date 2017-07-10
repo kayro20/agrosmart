@@ -72,9 +72,9 @@ export default class Summary extends React.Component {
             icon="wi wi-day-sunny fa-4x m-b-sm" text="Alta Luminosidade" value="540,9 W/m²"
             center={true}
           />
-          <div className="last-update">
-            <p>Última atualização: 22 de Junho, 10:49</p>
-          </div>
+        </div>
+        <div className="last-update">
+          <p>Última atualização: 22 de Junho, 10:49</p>
         </div>
       </div>
     );
