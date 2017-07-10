@@ -1,5 +1,6 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.css';
 @import '../node_modules/font-awesome/css/font-awesome.css';
+@import '../node_modules/chartist/dist/scss/chartist.scss';
 @import '../vendor/weather-icons-master/css/weather-icons.css';
 @import '../vendor/weather-icons-master/css/weather-icons-wind.css';
 @import 'components/header.scss';
@@ -7,11 +8,13 @@
 @import 'components/info-card.scss';
 @import 'components/weather-forecast.scss';
 @import 'components/sidebar.scss';
+@import 'components/lineareachart.scss';
+@import 'components/footer.scss';
 
 body {
   font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #676a6c;
-  padding: 61px 0 30px 0;
+  padding: 61px 0 0 0;
 }
 
 .client-name {

@@ -1,4 +1,5 @@
 import React from 'react';
+import LineChart from './lineareachart';
 
 class WeatherCard extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class WeatherCard extends React.Component {
             <div className="average"><span> { this.props.average } </span></div>
             <div className="minmax"><span> { this.props.max } </span></div>
           </div>
+          <LineChart />
           <div className="rain">
             <h4>Chuva</h4>
             <div className="rain-info">
@@ -39,7 +41,7 @@ export default class WeatherForecast extends React.Component {
   render() {
     return(
         <div className="summary-content">
-          <div className="row title">Previsão para São Bernardo do Sul</div>
+          <div className="row title">Previsão para Fazenda Banco Alfa</div>
           <div className="row forecast">
             <WeatherCard
               title="Segunda-feira"

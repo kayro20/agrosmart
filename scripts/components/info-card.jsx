@@ -109,6 +109,13 @@ export default class InfoCard extends React.Component {
           phase="Produção"
           status="Não irrigar"
         />
+        <Pivo
+          title="Pivo 7"
+          background="https://storage.googleapis.com/vai-agrosmart/uploads/field/image/image/221/thumb_Pivo7.png"
+          culture="Milho A."
+          phase="Produção"
+          status="Não irrigar"
+        />
       </div>
     );
   }

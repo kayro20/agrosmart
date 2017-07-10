@@ -17,6 +17,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "bootstrap": "^3.3.7",
+    "chartist": "^0.11.0",
     "config": "^1.26.1",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.2",

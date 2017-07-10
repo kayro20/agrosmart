@@ -24,12 +24,17 @@ export default class Sidebar extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {show: false};
+    this.state = {show: null};
   }
 
   render() {
+    let className = '';
+    if (this.state.show !== null) {
+      className = (this.state.show ? 'active' : 'inactive');
+    }
+
     return (
-      <aside className={"sidebar " + (this.state.show ? '' : 'active')}>
+      <aside className={"sidebar " + className}>
         <div className="sidebar-header">
           <img src={require('../../assets/images/logo_inverted.png')}/>
           <div className="dropdown">
