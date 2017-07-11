@@ -73,7 +73,11 @@
     > div {
       font-size: 0.9em;
     }
+  }
 
+  .dropdown-menu {
+    min-width: 0;
+    width: 100%;
   }
 }
 

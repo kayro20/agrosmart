@@ -1,29 +1,5 @@
 import React from 'react';
 
-class Pivo extends React.Component {
-  render() {
-    return(
-      <div className="col-sm-3 pivo">
-        <div className="card">
-          <div className="title"><h4 className="car-title">{ this.props.title }</h4></div>
-          <div className="pivo-image"
-               style={{background: "url('" + this.props.background + "') center no-repeat"}}>
-          </div>
-          <div className="card-block">
-            <p className="card-text"><i className="fa fa-leaf"></i>{ this.props.culture }</p>
-            <p className="card-text"><i className="fa fa-signal"></i>{ this.props.phase }</p>
-            <div className="status">{ this.props.status }</div>
-          </div>
-          <div className="card-footer">
-            <button data-toggle="modal" data-target="#modal"><i className="fa fa-edit fa-2x"></i></button>
-            <a><i className="fa fa-bar-chart fa-2x"></i></a>
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
-
 // Modal to Edit date time. Inputs "time" and "date" could be replaced by
 // "datetime" input.
 class Modal extends React.Component {
@@ -67,55 +43,31 @@ export default class InfoCard extends React.Component {
     return(
       <div className="pivo-card">
         <Modal />
-        <Pivo
-          title="Pivo 1"
-          background="https://storage.googleapis.com/vai-agrosmart/uploads/field/image/image/215/thumb_Pivo1.png"
-          culture="Milho A."
-          phase="Produção"
-          status="Não irrigar"
-        />
-        <Pivo
-          title="Pivo 2"
-          background="https://storage.googleapis.com/vai-agrosmart/uploads/field/image/image/216/thumb_Pivo2.png"
-          culture="Milho B."
-          phase="Produção"
-          status="Irrigar"
-        />
-        <Pivo
-          title="Pivo 3"
-          background="https://storage.googleapis.com/vai-agrosmart/uploads/field/image/image/217/thumb_Pivo3.png"
-          culture="Milho C."
-          phase="Cultivo"
-          status="Não irrigar"
-        />
-        <Pivo
-          title="Pivo 4"
-          background="https://storage.googleapis.com/vai-agrosmart/uploads/field/image/image/218/thumb_Pivo4.png"
-          culture="Milho D."
-          phase="Produção"
-          status="Não irrigar"
-        />
-        <Pivo
-          title="Pivo 5"
-          background="https://storage.googleapis.com/vai-agrosmart/uploads/field/image/image/219/thumb_Pivo5.png"
-          culture="Milho A."
-          phase="Crescimento"
-          status="Não irrigar"
-        />
-        <Pivo
-          title="Pivo 6"
-          background="https://storage.googleapis.com/vai-agrosmart/uploads/field/image/image/220/thumb_Pivo6.png"
-          culture="Milho A."
-          phase="Produção"
-          status="Não irrigar"
-        />
-        <Pivo
-          title="Pivo 7"
-          background="https://storage.googleapis.com/vai-agrosmart/uploads/field/image/image/221/thumb_Pivo7.png"
-          culture="Milho A."
-          phase="Produção"
-          status="Não irrigar"
-        />
+        { this.props.children }
+      </div>
+    );
+  }
+}
+
+InfoCard.Pivo = class Pivo extends React.Component {
+  render() {
+    return(
+      <div className="col-sm-3 pivo">
+        <div className="card">
+          <div className="title"><h4 className="car-title">{ this.props.title }</h4></div>
+          <div className="pivo-image"
+               style={{background: "url('" + this.props.background + "') center no-repeat"}}>
+          </div>
+          <div className="card-block">
+            <p className="card-text"><i className="fa fa-leaf"></i>{ this.props.culture }</p>
+            <p className="card-text"><i className="fa fa-signal"></i>{ this.props.phase }</p>
+            <div className="status">{ this.props.status }</div>
+          </div>
+          <div className="card-footer">
+            <button data-toggle="modal" data-target="#modal"><i className="fa fa-edit fa-2x"></i></button>
+            <a><i className="fa fa-bar-chart fa-2x"></i></a>
+          </div>
+        </div>
       </div>
     );
   }

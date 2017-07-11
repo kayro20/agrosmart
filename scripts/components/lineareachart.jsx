@@ -1,11 +1,6 @@
 import React from 'react';
 import Chartist from 'chartist';
 
-var data = {
-  labels: ['09:00', '14:00', '19:00', '00:00', '04:00'],
-  series: [[15, 22, 20, 14, 13]]
-}
-
 var options = {
   low: 0,
   showArea: true
@@ -22,7 +17,7 @@ export default class LineChart extends React.Component {
   }
 
   updateChart() {
-    return new Chartist.Line('#' + this.state.id, data, options);
+    return new Chartist.Line('#' + this.state.id, this.props.data, options);
   }
 
   render() {

@@ -12,9 +12,12 @@ export default class Header extends React.Component {
             <img src={require('../../assets/images/logo-navbar.png')} alt="Logo verde"/>
             <div className="icon-btn btn-notification">
               <button className="dropdown-toggle" data-toggle="dropdown"><i className="fa fa-envelope"/><span className="indicator">10</span></button>
-              <ul className="dropdown-menu">
+              <ul className="dropdown-menu dropdown-menu-right">
                 <li>
-                  <a href="http://cultivointeligente.com.br/inbox/mark_as_read">Marcar todas como lidas</a>
+                  <a href="http://cultivointeligente.com.br/inbox/mark_as_read">
+                    <i className="fa fa-envelope-open"></i>
+                    Marcar todas como lidas
+                  </a>
                 </li>
               </ul>
             </div>
