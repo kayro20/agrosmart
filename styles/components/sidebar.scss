@@ -20,6 +20,7 @@
   }
 }
 
+$sidebar-width: 220px;
 .sidebar {
   $animation-duration: 0.5s;
 
@@ -92,27 +93,7 @@
   .sidebar-menu-item {
     $height: 46px;
     $transition-duration: 0.2s;
-
-    height: $height;
-    position: relative;
-    display: flex;
-    align-items: center;
     text-decoration: none;
-    transition: background $transition-duration ease-out;
-
-    &:hover {
-      background: #458c49;
-
-      * {
-        color: #fff;
-      }
-    }
-
-    * {
-      font-size: 0.89em;
-      text-decoration: none;
-      transition: color $transition-duration ease-out;
-    }
 
     i {
       display: inline-block;
@@ -123,9 +104,77 @@
       text-align: center;
     }
 
-    div {
+    .chevron {
+      position: absolute;
+      right: 0;
+    }
+
+    .item-text {
       display: inline-block;
       font-weight: bold;
+    }
+
+    .sidebar-main {
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      transition: background $transition-duration ease-out;
+      width: $sidebar-width;
+      height: $height;
+
+      &:hover {
+        background: #458c49;
+
+        * {
+          color: #fff;
+        }
+      }
+
+      * {
+        font-size: 0.89em;
+        text-decoration: none;
+        transition: color $transition-duration ease-out;
+      }
+    }
+
+    .sidebar-submenu {
+      transition: max-height 0.5s ease-out;
+      max-height: 0;
+      overflow: hidden;
+      background: #3e495f;
+
+      &.active {
+        max-height: 1000px;
+      }
+
+      div {
+        cursor: pointer;
+        $height: 32px;
+        display: block;
+        height: $height;
+        font-size: 0.9em;
+        transition: background $transition-duration ease-out, color $transition-duration ease-out;
+
+        &:hover {
+          background: #458c49;
+          color: #fff;
+        }
+
+        a {
+          padding: 7px 10px 7px 52px;
+          width: 100%;
+          display: inherit;
+          color: #9ea6b9;
+          text-decoration: none;
+          font-weight: 600;
+        }
+
+        a:hover {
+          color: white;
+        }
+      }
     }
   }
 }
