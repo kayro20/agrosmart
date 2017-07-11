@@ -3,7 +3,7 @@ import Utils from 'utils';
 
 export default class Router extends React.Component {
   getView() {
-    return require('views/' + Utils.getRoute()).default;
+    return require('views/index').default;
   }
 
   render() {
